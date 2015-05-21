@@ -1,0 +1,39 @@
+{
+  "name": "clz32",
+  "version": "0.0.0",
+  "description": "ES6 Math.clz32() ponyfill",
+  "license": "MIT",
+  "repository": "sindresorhus/clz32",
+  "author": {
+    "name": "Sindre Sorhus",
+    "email": "sindresorhus@gmail.com",
+    "url": "sindresorhus.com"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "node test.js"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "es6",
+    "es2015",
+    "ecmascript",
+    "harmony",
+    "ponyfill",
+    "polyfill",
+    "shim",
+    "number",
+    "math",
+    "clz32",
+    "leading",
+    "zero",
+    "binary"
+  ],
+  "devDependencies": {
+    "ava": "0.0.4"
+  }
+}
