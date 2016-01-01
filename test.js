@@ -1,10 +1,10 @@
-'use strict';
-var test = require('ava');
-Math.clz32 = undefined;
-var clz32 = require('./');
+import test from 'ava';
 
-test(function (t) {
-	t.assert([
+Math.clz32 = undefined;
+const m = require('./');
+
+test(t => {
+	t.is([
 		NaN,
 		Infinity,
 		-Infinity,
@@ -15,18 +15,15 @@ test(function (t) {
 		'foo',
 		{},
 		[]
-	].filter(function (x) {
-		return clz32(x) !== 32;
-	}).length === 0);
-	t.assert(clz32() === 32);
-	t.assert(clz32(0) === 32);
-	t.assert(clz32(1) === 31);
-	t.assert(clz32(1000) === 22);
-	t.assert(clz32(true) === 31);
-	t.assert(clz32(3.5) === 30);
-	t.assert(clz32(-1) === 0);
-	t.assert(clz32(0.5) === 32);
-	t.assert(clz32(2 ^ 32 - 1) === 27);
-	t.assert(clz32(2 ^ 32) === 26);
-	t.end();
+	].filter(x => m(x) !== 32).length, 0);
+	t.is(m(), 32);
+	t.is(m(0), 32);
+	t.is(m(1), 31);
+	t.is(m(1000), 22);
+	t.is(m(true), 31);
+	t.is(m(3.5), 30);
+	t.is(m(-1), 0);
+	t.is(m(0.5), 32);
+	t.is(m(2 ^ 32 - 1), 27);
+	t.is(m(2 ^ 32), 26);
 });
