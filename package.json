@@ -1,7 +1,7 @@
 {
   "name": "clz32",
   "version": "1.0.0",
-  "description": "ES6 Math.clz32() ponyfill",
+  "description": "ES2015 Math.clz32() ponyfill",
   "license": "MIT",
   "repository": "sindresorhus/clz32",
   "author": {
@@ -19,10 +19,7 @@
     "index.js"
   ],
   "keywords": [
-    "es6",
     "es2015",
-    "ecmascript",
-    "harmony",
     "ponyfill",
     "polyfill",
     "shim",
