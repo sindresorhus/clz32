@@ -1,3 +1,7 @@
+Deprecated as this is now natively available in all modern browsers and Node.js versions.
+
+---
+
 # clz32
 
 > ES2015 [`Math.clz32()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/clz32) [ponyfill](https://ponyfill.com)
